@@ -1,0 +1,137 @@
+
+
+      .thumbnail{
+        width: 100%;
+      }
+
+      .video-title{
+        margin-top: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .profile-picture{
+        width: 36px;
+        border-radius: 50px;
+      }
+
+      .thumbnail-row{
+        margin-bottom: 8px;
+        position:relative;
+      }
+
+      .video-time{
+        position: absolute;
+        right: 5px;
+        bottom: 8px;
+        background-color: rgba(2, 2, 2, 0.6);
+        color: white;
+        font-family: Roboto,Arial;
+        padding: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+      }
+
+      .video-author,
+      .video-stats{
+        font-size: 12px;
+        color: rgb(96,96,96);
+      }
+
+      .video-author{
+        margin-bottom:4px;
+      }
+
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
+
+      @media (max-width: 750px){
+        .video-grid{
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 1000px){
+        .video-grid{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .video-title{
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .video-author,
+        .video-stats{
+          font-size: 14px;
+        }
+        
+      }
+
+
+      .video-title-link{
+        text-decoration: none;
+        color: black;
+      }
+
+
+    .img-tooltip{
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltips-images{
+      position: absolute;
+      box-shadow: 0 0 7px rgba(2, 2, 2, 0.8);
+      transition: box-shadow 0.4s,
+                  opacity 0.4s;
+      
+      border-radius: 6px;
+      width: 300px;
+      padding: 10px;
+      background-color: white;
+      top: 50px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .profile-picture-tooltips{
+      width: 75px;
+      border-radius: 80px;
+    }
+
+    .video-author-tooltips{
+      font-family: Roboto, Arial;
+      font-weight: 700;
+      font-size: 22px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+
+    }
+
+    .subscribers{
+      font-family: Roboto, Arial;
+      padding-left: 15px;
+      
+    }
+
+    .img-tooltip:hover .tooltips-images{
+      opacity: 1;
+    }
+
